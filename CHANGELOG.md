@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.53.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.54.0...1.x)
+
+## [v1.54.0](https://github.com/laravel/sail/compare/v1.53.0...v1.54.0) - 2026-03-11
+
+* Use UTF-8 locale inside container by [@MrMeshok](https://github.com/MrMeshok) in https://github.com/laravel/sail/pull/849
 
 ## [v1.53.0](https://github.com/laravel/sail/compare/v1.52.0...v1.53.0) - 2026-02-06
 
