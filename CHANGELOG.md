@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.54.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.55.0...1.x)
+
+## [v1.55.0](https://github.com/laravel/sail/compare/v1.54.0...v1.55.0) - 2026-03-23
+
+* introduce new SAIL_DOCKER_BINARY env for podman support by [@Vringe](https://github.com/Vringe) in https://github.com/laravel/sail/pull/857
 
 ## [v1.54.0](https://github.com/laravel/sail/compare/v1.53.0...v1.54.0) - 2026-03-11
 
