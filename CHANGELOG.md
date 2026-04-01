@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.55.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.56.0...1.x)
+
+## [v1.56.0](https://github.com/laravel/sail/compare/v1.55.0...v1.56.0) - 2026-04-01
+
+* Enable php8.5-swoole in Dockerfile by [@mihaileu](https://github.com/mihaileu) in https://github.com/laravel/sail/pull/859
 
 ## [v1.55.0](https://github.com/laravel/sail/compare/v1.54.0...v1.55.0) - 2026-03-23
 
