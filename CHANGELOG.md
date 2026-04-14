@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.56.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.57.0...1.x)
+
+## [v1.57.0](https://github.com/laravel/sail/compare/v1.56.0...v1.57.0) - 2026-04-14
+
+* Forward AI agent env vars into Docker containers by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/sail/pull/862
+* Add missing AI agent env vars for Copilot CLI and Pi by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/sail/pull/865
 
 ## [v1.56.0](https://github.com/laravel/sail/compare/v1.55.0...v1.56.0) - 2026-04-01
 
