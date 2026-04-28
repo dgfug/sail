@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.57.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.58.0...1.x)
+
+## [v1.58.0](https://github.com/laravel/sail/compare/v1.57.0...v1.58.0) - 2026-04-27
+
+* Add new AI agent env vars by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/sail/pull/867
 
 ## [v1.57.0](https://github.com/laravel/sail/compare/v1.56.0...v1.57.0) - 2026-04-14
 
