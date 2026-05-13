@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.58.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.59.0...1.x)
+
+## [v1.59.0](https://github.com/laravel/sail/compare/v1.58.0...v1.59.0) - 2026-05-13
+
+* Backport 8.5 Dockerfile to 8.4, 8.3, 8.2, 8.1 and 8.0 by [@A-Loot](https://github.com/A-Loot) in https://github.com/laravel/sail/pull/869
 
 ## [v1.58.0](https://github.com/laravel/sail/compare/v1.57.0...v1.58.0) - 2026-04-27
 
