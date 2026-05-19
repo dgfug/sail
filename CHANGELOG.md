@@ -1,6 +1,12 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.59.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.60.0...1.x)
+
+## [v1.60.0](https://github.com/laravel/sail/compare/v1.59.0...v1.60.0) - 2026-05-14
+
+* Pin GitHub Actions to commit SHAs and add Dependabot config by [@joetannenbaum](https://github.com/joetannenbaum) in https://github.com/laravel/sail/pull/870
+* Bump shivammathur/setup-php from 2.37.0 to 2.37.1 in the github-actions group by [@dependabot](https://github.com/dependabot)[bot] in https://github.com/laravel/sail/pull/872
+* Manually install corepack to support Node 25+ by [@A-Loot](https://github.com/A-Loot) in https://github.com/laravel/sail/pull/871
 
 ## [v1.59.0](https://github.com/laravel/sail/compare/v1.58.0...v1.59.0) - 2026-05-13
 
