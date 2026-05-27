@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.60.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.61.0...1.x)
+
+## [v1.61.0](https://github.com/laravel/sail/compare/v1.60.0...v1.61.0) - 2026-05-23
+
+* [1.x] Fix RabbitMQ service stub using invalid env var names (#873) by [@YoussefMansour9](https://github.com/YoussefMansour9) in https://github.com/laravel/sail/pull/874
 
 ## [v1.60.0](https://github.com/laravel/sail/compare/v1.59.0...v1.60.0) - 2026-05-14
 
