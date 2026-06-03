@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.61.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.62.0...1.x)
+
+## [v1.62.0](https://github.com/laravel/sail/compare/v1.61.0...v1.62.0) - 2026-05-27
+
+**Full Changelog**: https://github.com/laravel/sail/compare/v1.61.0...v1.62.0
 
 ## [v1.61.0](https://github.com/laravel/sail/compare/v1.60.0...v1.61.0) - 2026-05-23
 
