@@ -31,46 +31,43 @@ RUN apt-get update && apt-get upgrade -y \
     && apt-get update \
     && apt-get install -y \
         libgd3 \
-        php8.0-cli \
-        php8.0-dev \
-        php8.0-pgsql \
-        php8.0-sqlite3 \
-        php8.0-gd \
-        php8.0-curl \
-        php8.0-mongodb \
-        php8.0-imap \
-        php8.0-mysql \
-        php8.0-mbstring \
-        php8.0-xml \
-        php8.0-zip \
-        php8.0-bcmath \
-        php8.0-soap \
-        php8.0-intl \
-        php8.0-readline \
-        php8.0-ldap \
-        php8.0-msgpack \
-        php8.0-igbinary \
-        php8.0-redis \
-        php8.0-swoole \
-        php8.0-memcached \
-        php8.0-pcov \
-        php8.0-imagick \
-        php8.0-xdebug \
+        php8.2-cli \
+        php8.2-dev \
+        php8.2-pgsql \
+        php8.2-sqlite3 \
+        php8.2-gd \
+        php8.2-curl \
+        php8.2-mongodb \
+        php8.2-imap \
+        php8.2-mysql \
+        php8.2-mbstring \
+        php8.2-xml \
+        php8.2-zip \
+        php8.2-bcmath \
+        php8.2-soap \
+        php8.2-intl \
+        php8.2-readline \
+        php8.2-ldap \
+        php8.2-msgpack \
+        php8.2-igbinary \
+        php8.2-redis \
+        php8.2-swoole \
+        php8.2-memcached \
+        php8.2-pcov \
+        php8.2-imagick \
+        php8.2-xdebug \
     && curl -sLS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer \
     && curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg \
     && echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_VERSION.x nodistro main" > /etc/apt/sources.list.d/nodesource.list \
     && apt-get update \
     && apt-get install -y nodejs \
-    && npm install -g npm \
-    && npm install -g pnpm \
-    && npm install -g bun \
-    && npx playwright install-deps \
-    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | tee /etc/apt/keyrings/yarnkey.gpg > /dev/null \
-    && echo "deb [signed-by=/etc/apt/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list \
+    && npm install -g npm pnpm bun corepack \
+    && corepack enable \
+    && corepack prepare yarn@stable --activate \
+    && npx -y playwright install-deps \
     && curl -sS https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | tee /etc/apt/keyrings/pgdg.gpg > /dev/null \
     && echo "deb [signed-by=/etc/apt/keyrings/pgdg.gpg] http://apt.postgresql.org/pub/repos/apt noble-pgdg main" > /etc/apt/sources.list.d/pgdg.list \
     && apt-get update \
-    && apt-get install -y yarn \
     && apt-get install -y $MYSQL_CLIENT \
     && apt-get install -y postgresql-client-$POSTGRES_VERSION \
     && apt-get -y autoremove \
@@ -79,13 +76,13 @@ RUN apt-get update && apt-get upgrade -y \
 
 RUN if [ -n "$PHP_EXTENSIONS" ]; then \
     apt-get update \
-    && apt-get install -y $(for ext in $PHP_EXTENSIONS; do echo "php8.0-$ext"; done) \
+    && apt-get install -y $(for ext in $PHP_EXTENSIONS; do echo "php8.2-$ext"; done) \
     && apt-get -y autoremove \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; \
 fi
 
-RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.0
+RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.2
 
 RUN userdel -r ubuntu
 RUN groupadd --force -g $WWWGROUP sail
@@ -94,7 +91,7 @@ RUN git config --global --add safe.directory /var/www/html
 
 COPY start-container /usr/local/bin/start-container
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY php.ini /etc/php/8.0/cli/conf.d/99-sail.ini
+COPY php.ini /etc/php/8.2/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
 
 EXPOSE 80/tcp
