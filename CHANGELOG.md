@@ -1,6 +1,14 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.62.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.63.0...1.x)
+
+## [v1.63.0](https://github.com/laravel/sail/compare/v1.62.0...v1.63.0) - 2026-06-18
+
+* Add Dependabot cooldown of 5 days by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/sail/pull/876
+* Enable Dependabot auto-merge by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/sail/pull/877
+* Bump actions/checkout from 6.0.2 to 6.0.3 in the github-actions group by [@dependabot](https://github.com/dependabot)[bot] in https://github.com/laravel/sail/pull/878
+* [1.x] Add PHP_EXTENSIONS build arg to install additional PHP extensions by [@sydgren](https://github.com/sydgren) in https://github.com/laravel/sail/pull/879
+* Bump shivammathur/setup-php from 2.37.1 to 2.37.2 in the github-actions group by [@dependabot](https://github.com/dependabot)[bot] in https://github.com/laravel/sail/pull/880
 
 ## [v1.62.0](https://github.com/laravel/sail/compare/v1.61.0...v1.62.0) - 2026-05-27
 
